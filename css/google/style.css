@@ -4,9 +4,6 @@
   padding: 0;
   box-sizing: border-box; /* Usiing the 'magic wand' fix to make it easier on me */
 }
-body {
-  background-color: bisque;
-}
 header {
   display: flex; /* Child image becomes a flex item, removing the baseline gap. */
   justify-content: center;
