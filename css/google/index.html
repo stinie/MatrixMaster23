@@ -1,0 +1,80 @@
+<!doctype html>
+<!--
+Assignment 2: Google
+September 18, 2026
+
+Learning goal:
+This assignment is a little laboratory for me to play around with and explore
+HTML elements and their CSS behavior.
+
+I already have some familiarity with tables, divs, and spans, so I am
+deliberately choosing not to rely on them for the layout. Instead, I want to
+explore less familiar HTML elements and learn how they behave by default,
+what happens when I style them, and how my CSS choices affect the layout.
+
+The goal is not only to recreate the design, but to understand what I am doing
+and why.
+
+I ran into Flexbox while working on the footer layout.
+It is still over my head, so I am keeping this version simple and want to
+explore Flexbox later from scratch, when I can focus on understanding it.
+
+Inline-block learning note:
+
+In the footer, the <nav> and #subscriptionForm are inline-block elements.
+I discovered that whitespace between these two elements creates a visible gap.
+
+At this specific place in the HTML, I therefore wrote:
+</nav><form ...>
+
+with no whitespace between the closing </nav> tag and the opening <form> tag.
+
+This is an old-school way of removing the inline-block whitespace gap.
+There is more to understand about this behavior, but I am not going down
+that rabbit hole right now. :)
+-->
+<html>
+  <head>
+    <title>Assignment 2: Google</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="Google.png" alt="Google 1998 logo" width="680" height="184" />
+    </header>
+    <main>
+      <!-- <h1>Search the web using Google!</h1> -->
+      <form action="#" method="POST" id="searchForm">
+        <label for="query">Search the web using Google!</label>
+        <input type="text" name="query" id="query" />
+        <button type="submit" id="search" formaction="#">Google Search</button>
+        <button type="submit" id="lucky" formaction="#">
+          I'm Feeling Lucky
+        </button>
+      </form>
+    </main>
+    <footer>
+      <!-- Special Searches, Help, About Google, Get Google updates -->
+      <nav class="footer-block">
+        <ul>
+          <li>Special Searches</li>
+          <li><a href="#">Standford Search</a></li>
+          <li><a href="#">Linux Search</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Help!</a></li>
+          <li><a href="#">About Google!</a></li>
+          <li><a href="#">Company Info</a></li>
+          <li><a href="#">Google! Logos</a></li>
+        </ul>
+      </nav><form action="#" method="POST" id="subscriptionForm" class="footer-block">
+        <p>Get Google!</p>
+        <p>Updates monthly:</p>
+        <input type="email" name="email" id="email" placeholder="your email" />
+        <button type="submit" id="subscribe" formaction="#">Subscribe</button>
+        <span><a href="#">Archive</a></span>
+      </form>
+      <p id="copyright">Copyright © 1998 Google Inc.</p>
+    </footer>
+  </body>
+</html>
