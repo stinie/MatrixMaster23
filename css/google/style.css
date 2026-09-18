@@ -1,0 +1,73 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Usiing the 'magic wand' fix to make it easier on me */
+}
+body {
+  background-color: bisque;
+}
+header {
+  display: flex; /* Child image becomes a flex item, removing the baseline gap. */
+  justify-content: center;
+}
+main {
+  text-align: center;
+  background-color: #eeeeee;
+}
+footer {
+  /* Keeping the default block display; text doesn't create the baseline gap. */
+  text-align: center;
+}
+nav {
+  width: 66.5%;
+}
+#searchForm {
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+#subscriptionForm {
+  width: 33%;
+  background-color: #7ee5da;
+}
+ul {
+  display: inline-block;
+  vertical-align: top;
+  list-style: none;
+  width: 49%;
+  background-color: #7ee5da;
+}
+ul,
+#subscriptionForm {
+  min-height: 100px;
+}
+label {
+  display: block;
+  font-size: 18px;
+}
+input {
+  display: block;
+  height: 30px;
+  margin: 0 auto;
+}
+
+#query {
+    width: 300px;
+}
+#email {
+    width: 200px;
+}
+button {
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px;
+  border-color: #7f9db9;
+}
+#copyright {
+  padding: 20px 0;
+}
+.footer-block {
+  display: inline-block;
+  vertical-align: top;
+}
+
