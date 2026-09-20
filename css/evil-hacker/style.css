@@ -1,5 +1,7 @@
+/* Modified version for CSS Assignment 1: The Evil Hacker.
+   Reworked the side-by-side layout from Flexbox to inline-block
+   and adjusted the spacing to more closely match the target layout. */
 
-/* Modified version for CSS Assignment 1: The Evil Hacker. */
 /*CSS reset, don't mind it for now. */
 * {
   margin: 5px;
@@ -14,22 +16,24 @@
   height: 150px;
   background-color: blue;
 }
-/* Add content_wrapper */
+/* Wrapper around nav_bar and main_content */
 #content_wrapper {
-    display: flex; /* Place nav_bar and main_content side by side */
-    padding: 0; /* Remove inherited reset padding */
-    margin: 0; /* Remove inherited reset margin */
+    padding: 0px;
 }
 #nav_bar {
   height: 300px;
   width: 180px;
   background-color: red;
+  margin-left: 0px;
+  display: inline-block; /* Place nav_bar and main_content side by side */
 }
 #main_content {
-  height: 350px; /* Reduced height to match the target layout */
+  height: 355px; /* Reduced height to match the target layout */
   width: 725px;
   background-color: yellow;
-  padding-bottom: 0; /* Remove extra yellow space at the bottom */
+  display: inline-block; /* Place nav_bar and main_content side by side */
+  vertical-align: top; /* Align main_content with the top of nav_bar */
+  margin-right: 0px;
 }
 .subcontent {
   height: 200px;
@@ -44,4 +48,5 @@
   width: 670px;
   background-color: pink;
   margin-left: 10px; /* Align advertisement with the purple blocks */
+  margin-top: 10px;
 }
