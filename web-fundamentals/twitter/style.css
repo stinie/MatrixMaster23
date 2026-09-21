@@ -41,7 +41,7 @@ button img {
   padding: 20px;
 }
 #dialog-top {
-  background-image: url(./assets/twitter.png);
+  background-image: url(twitter.png);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 70px auto;
