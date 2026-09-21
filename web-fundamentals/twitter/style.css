@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Temporary font stack; refine to Twitter's Chirp font later if time allows. */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+body {
+  background-color: #999999;
+}
+h1 {
+  font-size: 32px;
+  margin: 20px 0;
+  text-align: left;
+}
+button {
+    background-color: #FFF;
+    appearance: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+input {
+   width: 100%;
+   border: 1px solid #dadce0;
+   padding: 10px;
+   margin-bottom: 20px;
+}
+button img {
+  vertical-align: middle;
+  width: 30px;
+  height: auto;
+}
+#sign-in-dialog {
+  background-color: #FFF;
+  border-radius: 20px;
+  width: 800px;
+  max-width: 90%;
+  margin: 40px auto;
+  padding: 20px;
+}
+#dialog-top {
+  background-image: url(./assets/twitter.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 70px auto;
+  height: 40px;
+}
+#dialog-top button {
+  border-style: none;
+  font-size: 24px;
+}
+#dialog-middle {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+#next-form button {
+  background-color: #000;
+  color: #fff;
+}
+#dialog-middle button {
+  border: 1px solid #dadce0;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+#dialog-middle div {
+  text-align: center;
+  margin: 5px 0;
+}
+#dialog-middle div hr {
+  border: 0;
+  border-top: 1px solid #dadce0;
+}
+#dialog-middle div span {
+  position: relative;
+  top: -11px;
+  background-color: #FFF;
+  padding: 0 10px;
+}
+#dialog-bottom {
+  width: 300px;
+  margin: 20px auto;
+}
+#dialog-bottom a {
+  color: blue;
+}
