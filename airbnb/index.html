@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 2: AirBNB</title>
     <link href="style.css" rel="stylesheet" />
   </head>
@@ -16,11 +17,50 @@
       <p>This listing is no longer available.</p>
     </header>
     <main>
-      main
+      <search>
+        <h2>Find a place to stay</h2>
+        <form action="#" mnethod="POST">
+          <a href="#">
+            Rent nightly from real people in 830 cities in 73 countries
+          </a>
+          <input type="text" placeholder="Where are you going?">
+          <label for="check-in">Check in</label>
+          <input type="date" name="check-in" id="check-in">
+          <label for="check-out">Check out</label>
+          <input type="date" name="check-out" id="check-out">
+          <label>Guest</label>
+          <input type="number" min="1" max="10" step="1" value="1">
+        </form>
+      </search>
+      <section>
+          <img src="./assets/amsterdam.jpg" alt="" class="cover">
+          <article>
+            <img src="./assets/InstaWalk010.jpg" alt="InstaWalk010 Avatar">
+            <div>
+              <h4>"Gabs place" - Amsterdam, Netherlanda</h4>
+              <p>$85/night</p>
+              <o>1 Review</o>
+            </div>
+          </article>
+      </section>
+      <aside>
+        <article>
+          <h3>Frances & Greg, Los Angeles</h3>
+          <p>Recently reviewd</p>
+          <img src="./assets/la.webp" alt="">
+        </article>
+        <article>
+          <h3>Washington DC</h3>
+          <p>From $10/night</p>
+          <img src="./assets/washington.jpg" alt="">
+        </article>
+        <article>
+          <h3>Paris, France</h3>
+          <p>RRoo s from $20/night</p>
+          <img src="./assets/paris.jpg" alt="">
+        </article>
+      </aside>
     </main>
-    <aside>
-      aside
-    </aside>
     <footer>
       <nav>
         <div>
