@@ -15,6 +15,7 @@ header {
   margin-top: 15px;
   padding-left: 8px;
   margin-bottom: 15px;
+  border-bottom: 1px solid gray;
 }
 h1 {
   font-size: 28px;
@@ -32,16 +33,55 @@ p {
   font-size: 14px;
 }
 main {
-  display: inline-block;
-  width: 770px;
-  height: 500px; /* tmp */
+  display: flex;
+  gap: 20px;
 }
-aside {
-  display: inline-block;
+main search {
+  align-self: flex-start;
+  width: 40%;
+}
+
+input {
+  display: block;
+}
+section {
+  width: 40%;
+}
+section img.cover {
+  width: 100%;
+  height: auto;
+  border-bottom: 10px solid white;
+}
+section article {
+    display: flex;
+    flex-flow: wrap row;
+}
+section article img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+section article div {
   width: auto;
 }
+aside {
+  display: flex;
+  flex-flow: wrap column;
+  width: auto;
+  row-gap: 10px;
+}
+aside img {
+  width: 200px;
+  height: auto;
+}
+/* Not used for styling now
+aside article {
+
+}
+*/
+
 nav {
-  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 20px;
   padding-left: 10px
 }
 nav div {
