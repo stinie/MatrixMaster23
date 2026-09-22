@@ -1,0 +1,42 @@
+* {
+  margin:0 ;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container {
+  margin: 0 auto;
+  width: 1524px;
+}
+header {
+  background-color: rgba(51, 114, 130, 0.4); /* tmp */
+  display: flex;
+  height: 60px;
+}
+main {
+  background-color: rgba(173, 63, 164, 0.4); /* tmp */
+  display: flex;
+}
+header #header-left {
+  flex: 0 0 auto;
+  width: 360px;
+}
+header #header-middle {
+  flex: 1;
+  padding: 5px 20px;
+  background-color: #dddddd;
+}
+header #header-right {
+  flex: 0 0 auto;
+  width: 435px;
+}
+main #main-left {
+  flex: 0 0 auto;
+  width: 360px;
+}
+main #main-middle {
+  flex: 1;
+}
+main #main-right {
+  flex: 0 0 auto;
+  width: 435px;
+}
