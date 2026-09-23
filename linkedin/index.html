@@ -9,6 +9,7 @@
   <body>
     <div id="container">
       <header>
+        <!-- work with | here -->
         <img src="./logo.png" alt="">
         <nav>
           <a href="#">Home</a> | 
@@ -60,8 +61,8 @@
               <button type="submit">Go</button>
             </form>
           </search>
-          <nav aria-label="Browse people by letter">
-            People directory: 
+          <nav aria-label="Browse people by letter" id="people-directory">
+            <span>People directory:</span>
             <a href="#">A</a>
             <a href="#">B</a>
             <a href="#">C</a>
@@ -92,8 +93,9 @@
           </nav>
         </footer>
       </main>
-      <footer>
+      <footer id="site-footer">
         <nav aria-label="Footer">
+          <!-- Solve | in CSS with a hack -->
           <h3>Company</h3>
           <ul>
             <li><a href="#">Customer Service</a></li>
@@ -121,6 +123,17 @@
             <li><a href="#">LinkedIn Updates</a></li>
           </ul>
         </nav><!-- End Footer Nav-->
+
+        <small>
+          LinkedIn Corporation &copy; 2008 |
+          <a href="#">User Agreement</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Copyright Policy</a>
+        </small>
+
+        <small>
+          Use of this site is subject to express terms of use, which prohibit commercial use of this site. By continuing past this page, you agree to abide by these terms.
+        </small>
       </footer>
     </div>
   </body>
