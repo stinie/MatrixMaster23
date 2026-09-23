@@ -23,6 +23,16 @@ h1 {
   font-size: 20px;
   color: #6999cd;
 }
+ul {
+  list-style-position: inside;
+  list-style: none;
+}
+h2 {
+  font-size: 18px;
+  color: #FFF;
+  font-weight: bold;
+  background-color: #4e9cc6;
+}
 main {
   display: flex;
   flex-wrap: wrap;
@@ -45,6 +55,27 @@ main footer {
   border-top: 1px solid #cccccc;
   margin-left: 20px;
   margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+/* the name search on one centered line */
+footer search form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+/* the A–Z letters on one centered line */
+main footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 main section img {
   width: 40px;
@@ -53,8 +84,6 @@ main section img {
   flex-shrink: 0;
 }
 main ul {
-  list-style-position: inside;
-  list-style: none;
   margin-top: 20px;
 }
 main li {
@@ -65,10 +94,6 @@ main li {
 }
 main section legend {
   grid-column: 1 / -1;
-  font-size: 18px;
-  color: #FFF;
-  font-weight: bold;
-  background-color: #4e9cc6;
 }
 main section fieldset {
   display: grid;
@@ -85,12 +110,35 @@ main section fieldset p {
   justify-self: start;
 }
 
-/* Layout — everything on one centered line */
-footer search form {
+/* The footer nav "deparment */
+
+/* the page footer (direct child of #container, not the one in <main>) */
+#container > footer nav {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px 32px;
+  align-items: baseline;
+}
+
+
+/* each row of links on one line */
+#container > footer ul {
+  margin: 0;
+  padding: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 12px;
+}
+
+/* I "remeber" the content add from way back */
+#container > footer li:not(:last-child)::after {
+  content: "|";
+  margin-left: 12px;
+  color: #ccc;
+}
+#container > footer h3 {
+  margin: 0;
+  text-align: left;
 }
 
 /* This one of from the internet :-) Standard "visually hidden" utility — hides visually, keeps it for screen readers. */
