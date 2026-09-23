@@ -5,6 +5,7 @@
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
+  color: gray;
 }
 #container {
   margin: 0 auto;
@@ -15,6 +16,7 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 10px solid #47a3d2;
+  font-size: 12px;
 }
 footer {
   background-color: #f7f7f7;
@@ -24,14 +26,10 @@ h1 {
   color: #6999cd;
 }
 ul {
-  list-style-position: inside;
   list-style: none;
 }
-h2 {
-  font-size: 18px;
-  color: #FFF;
-  font-weight: bold;
-  background-color: #4e9cc6;
+a {
+  color: #003399
 }
 main {
   display: flex;
@@ -42,6 +40,10 @@ main {
 }
 main section {
   flex: 1;
+  margin-top: 20px;
+}
+main section label {
+  padding-left: 10px;
 }
 main section:first-of-type {
   margin-left: 20px;
@@ -92,8 +94,9 @@ main li {
   gap: 8px;
   font-size: 12px;
 }
-main section legend {
-  grid-column: 1 / -1;
+main section form {
+  border: 1px solid #dddddd;
+  border-radius: 8px;   /* rounds only the form's corners */
 }
 main section fieldset {
   display: grid;
@@ -103,15 +106,46 @@ main section fieldset {
   border: none;
   padding: 0;
 }
-
+main section input {
+  border: 1px solid #dddddd;
+  margin-right: 15px;
+}
+main section legend {
+  grid-column: 1 / -1;
+  width: 100%;
+  font-size: 18px;
+  color: #FFF;
+  border: 1px solid #dddddd;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #4e9cc6;
+  margin-bottom: 10px;
+}
+main section legend h2 {
+  margin: 0;
+  font-size: 18px;
+  padding: 5px;
+}
 main section button,
 main section fieldset p {
   grid-column: 2;
   justify-self: start;
 }
 
+main section button {
+  background-color: #79bb15;
+  color: white;
+  padding: 2px 15px;
+  border-color: #669933;
+}
+main section fieldset p {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
 /* The footer nav "deparment */
-
+#container footer.site-footer {
+  border: 30px solid #f7f7f7;
+}
 /* the page footer (direct child of #container, not the one in <main>) */
 #container > footer nav {
   display: grid;
@@ -130,15 +164,27 @@ main section fieldset p {
   gap: 12px;
 }
 
-/* I "remeber" the content add from way back */
-#container > footer li:not(:last-child)::after {
-  content: "|";
-  margin-left: 12px;
-  color: #ccc;
-}
 #container > footer h3 {
   margin: 0;
   text-align: left;
+  font-size: 14px;
+}
+
+/* I "remeber" the content add from way back */
+#container > footer li:not(:last-child)::after {
+  content: "|";
+  margin-left: 6px;
+  color: #ccc;
+}
+
+#container > footer small {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+}
+#container #people-directory a,
+#container #site-footer a {
+  font-size: 12px;
 }
 
 /* This one of from the internet :-) Standard "visually hidden" utility — hides visually, keeps it for screen readers. */
