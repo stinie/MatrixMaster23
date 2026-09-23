@@ -133,17 +133,16 @@ main section input {
 main section legend {
   grid-column: 1 / -1;
   width: 100%;
-  font-size: 18px;
   color: #FFF;
   border: 1px solid #dddddd;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  background-color: #4e9cc6;
   margin-bottom: 10px;
+  background: linear-gradient(to bottom, #5a9fd4 0%, #4e9cc6 100%); 
 }
 main section legend h2 {
   margin: 0;
-  font-size: 18px;
+  font-size: 14px;
   padding: 5px;
 }
 main section button,
@@ -153,11 +152,21 @@ main section fieldset p {
 }
 
 main section button {
-  /* background-color: #79bb15;*/
+  font-size: 12px;
   border: 1px solid #669933;
   color: white;
   padding: 2px 15px;
   background: linear-gradient(to bottom, #79bb15 0%, #669933 100%);
+}
+main search input {
+  border: 1px solid #dddddd;
+  color: gray;
+}
+main search button {
+  background: #dddddd;
+  padding: 2px 8px;
+  border: 1px solid rgba(128, 128, 128, 0.474);
+  color: gray;
 }
 main section fieldset p {
   font-size: 10px;
