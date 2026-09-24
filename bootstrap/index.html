@@ -1,123 +1,127 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Assignment 2: Time to Bootstrap</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <nav
-        class="navbar navbar-expand-lg navbar-dark"
-        style="background-color: #6f42c1"
-      >
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div>
-        <h1>Assignments</h1>
-        <p>A list of all assignments</p>
-        <table class="table table-striped table-hover">
-          <thead>
-            <tr>
-              <th>Assignment 1</th>
-              <th>Assignment 2</th>
-              <th>Assignment 3</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <a
-                  href="https://github.com/stinie/MatrixMaster23/blob/main/html/fix-indentation/index.html"
-                  target="_blank"
-                  >Fix Indentation</a
-                >
-              </td>
-              <td>
-                <a
-                  href="https://github.com/stinie/MatrixMaster23/blob/main/html/code-validation/index.html"
-                  target="_blank"
-                  >Code Validation</a
-                >
-              </td>
-              <td>
-                <a href="#" target="_blank">Your first website</a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <br /><br />
-        <span>Apply for a new assignment</span>
-        <form action="#" method="POST">
-          <label for="assignments" class="form-label"
-            >Select your CSS assignments</label
-          >
-          <select id="assignments" name="assignments" class="form-select">
-            <option value="assignment4">The Evil Hacker</option>
-            <option value="assignment5">Google</option>
-          </select>
-          <div>
-            <label for="name" class="form-label">Full name:</label>
-            <input type="text" id="name" name="name" class="form-control" />
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    Assignment 2: Time to Bootstrap
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #6f42c1">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            About
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div>
+      <h1>
+        Assignments
+      </h1>
+      <p>
+        A list of all assignments
+      </p>
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th>
+              Assignment 1
+            </th>
+            <th>
+              Assignment 2
+            </th>
+            <th>
+              Assignment 3
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="https://github.com/stinie/MatrixMaster23/blob/main/html/fix-indentation/index.html"
+                target="_blank">
+                Fix Indentation
+              </a>
+            </td>
+            <td>
+              <a href="https://github.com/stinie/MatrixMaster23/blob/main/html/code-validation/index.html"
+                target="_blank">
+                Code Validation
+              </a>
+            </td>
+            <td>
+              <a href="#" target="_blank">
+                Your first website
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br /><br />
+      <span>
+        Apply for a new assignment
+      </span>
+      <form action="#" method="POST">
+        <label for="assignments" class="form-label">
+          Select your CSS assignments
+        </label>
+        <select id="assignments" name="assignments" class="form-select">
+          <option value="assignment4">
+            The Evil Hacker
+          </option>
+          <option value="assignment5">
+            Google
+          </option>
+        </select>
+        <div>
+          <label for="name" class="form-label">
+            Full name:
+          </label>
+          <input type="text" id="name" name="name" class="form-control" />
+        </div>
+        <div>
+          <input type="checkbox" id="subscribe" name="subscribe" value="subscribe" class="form-check-input" />
+          <label for="subscribe" class="form-check-label">
+            Subscribe to my newsletter?
+          </label>
+        </div>
+        <div>
+          <div class="form-check">
+            <input type="radio" id="html-news" name="newsletter" value="html" class="form-check-input" />
+            <label for="html-news" class="form-check-label">
+              HTML news
+            </label>
           </div>
-          <div>
-            <input
-              type="checkbox"
-              id="subscribe"
-              name="subscribe"
-              value="subscribe"
-              class="form-check-input"
-            />
-            <label for="subscribe" class="form-check-label"
-              >Subscribe to my newsletter?</label
-            >
+          <div class="form-check">
+            <input type="radio" id="css-news" name="newsletter" value="css" class="form-check-input" />
+            <label for="css-news" class="form-check-label">
+              CSS news
+            </label>
           </div>
-          <div>
-            <div class="form-check">
-              <input
-                type="radio"
-                id="html-news"
-                name="newsletter"
-                value="html"
-                class="form-check-input"
-              />
-              <label for="html-news" class="form-check-label">HTML news</label>
-            </div>
-            <div class="form-check">
-              <input
-                type="radio"
-                id="css-news"
-                name="newsletter"
-                value="css"
-                class="form-check-input"
-              />
-              <label for="css-news" class="form-check-label">CSS news</label>
-            </div>
-          </div>
-          <div>
-            <br /><br />
-            <input type="submit" value="Submit" class="btn btn-primary" />
-          </div>
-        </form>
-      </div>
+        </div>
+        <div>
+          <br /><br />
+          <input type="submit" value="Submit" class="btn btn-primary" />
+        </div>
+      </form>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
