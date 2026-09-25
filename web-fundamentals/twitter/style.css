@@ -71,15 +71,20 @@ button img {
   text-align: center;
   margin: 5px 0;
 }
-#dialog-middle div hr {
-  border: 0;
+.or {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 5px 0;
+}
+.or::before,
+.or::after {
+  content: "";
+  flex: 1; /* each line grows to fill the space */
   border-top: 1px solid #dadce0;
 }
-#dialog-middle div span {
-  position: relative;
-  top: -11px;
-  background-color: #FFF;
-  padding: 0 10px;
+.or span {
+  padding: 0 10px; /* gap between the word and the lines */
 }
 #dialog-bottom {
   width: 300px;
